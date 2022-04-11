@@ -1,9 +1,9 @@
 let count = 0;
 let interval = setInterval(() => {
     count++;
-    console.log('Hello Docker!!!');
+    console.log('Hello Docker!!!', count);
 
-    count === 3 ?
-        clearInterval(interval) :
-        null
+    if (count === 3) {
+        clearInterval(interval)
+    }
 }, 1000);
